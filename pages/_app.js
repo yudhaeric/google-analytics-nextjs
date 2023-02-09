@@ -4,19 +4,6 @@ import Router from 'next/router'
 import Script from 'next/script'
 
 export default function App({ Component, pageProps }) {
-    useEffect(() => {
-      const handleRouteChange = (url) => {
-        ga('send', 'pageview', {
-          page: url,
-          title: 'Homepage'
-        });
-      }
-      Router.events.on('routeChangeComplete', handleRouteChange)
-      return () => {
-        Router.events.off('routeChangeComplete', handleRouteChange)
-      }
-    }, [])
-
     return (
       <div>
         <Component {...pageProps} />
@@ -36,6 +23,4 @@ export default function App({ Component, pageProps }) {
         </Script>
       </div>
     )
-      
-
 }
