@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Form() {
   return (
     <div className='mt-[15%]'>
-        <h1 className={`${inter} flex text-4xl justify-center`}>
+        <h1 className={`flex text-4xl justify-center font-bold`}>
           Fill This Form & Check in Your <span className='text-[#E1A010]'>&nbsp;Google Analytics.</span>
         </h1>
         <div className='flex justify-center gap-5'>
