@@ -1,9 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function Fill() {
   return (
     <div className='flex flex-col items-center'>
+      <Head>
+        <title>Fill Form</title>
+      </Head>
       <div className='w-[35%] mt-[7%] bg-[#F2F7F5] border-2 border-black border-b-[6px] border-r-[6px] rounded-md'>
         <form className='flex flex-col px-5 py-3'>
           <label className='mb-2' for="name">Name:</label>
