@@ -29,8 +29,8 @@ export default function Home() {
           Testing Google Analytics in<span className='text-[#0070F3]'>&nbsp;Next JS.</span>
         </h1>
         <div className='flex justify-center'>
-          <Link href="/form">
-            <button onClick={handleClick} className='px-10 py-3 bg-blue-400 border-2 border-b-[6px] border-solid border-black rounded-lg mt-10 active:border-b-[2px] active:mt-[44px]'
+          <Link id="letsgo" href="/form">
+            <button onClick={handleClick()} className='px-10 py-3 bg-blue-400 border-2 border-b-[6px] border-solid border-black rounded-lg mt-10 active:border-b-[2px] active:mt-[44px]'
             >
               Let&#39;s Go
             </button>
