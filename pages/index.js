@@ -8,20 +8,14 @@ import { useEffect } from 'react';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-    useEffect(() => {
-    const handleClick = () => {
-      gtag("event", "click", {
-        event_category: "Button",
-        event_label: "Let's Go"
-      });
-    };
 
-    const button = document.querySelector("letsgo");
-    button.addEventListener("click", handleClick);
-    return () => {
-      button.removeEventListener("click", handleClick);
-    };
-  }, []);
+  const handleClick = () => {
+    gtag("event", "click", {
+      event_category: "Button",
+      event_label: "Let's Go"
+    });
+  };
+  
   return (
     <>
       <Head>
@@ -36,8 +30,7 @@ export default function Home() {
         </h1>
         <div className='flex justify-center'>
           <Link href="/form">
-            <button id="letsgo" className='px-10 py-3 bg-blue-400 border-2 border-b-[6px] border-solid border-black rounded-lg mt-10 active:border-b-[2px] active:mt-[44px]'
-            onClick="ga('send', 'event', 'category', 'action', 'label');"
+            <button onClick={handleClick} className='px-10 py-3 bg-blue-400 border-2 border-b-[6px] border-solid border-black rounded-lg mt-10 active:border-b-[2px] active:mt-[44px]'
             >
               Let&#39;s Go
             </button>
