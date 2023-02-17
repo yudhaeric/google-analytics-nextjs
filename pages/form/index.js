@@ -20,11 +20,11 @@ export default function Form() {
             Back to Home
           </button>
         </Link>
-        <Link href="/form/fill">
+        <a href="https://my-form-omega.vercel.app/form/fill">
           <button className='px-10 py-3 bg-blue-400 border-2 border-b-[6px] border-solid border-[#183153] rounded-lg mt-10 active:border-b-[2px] active:mt-[44px]'>
             Fill This Form
           </button>
-        </Link>
+        </a>
       </div>
     </div>
   )
