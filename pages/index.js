@@ -30,9 +30,15 @@ export default function Home() {
         </h1>
         <div className='flex justify-center'>
           <Link href="/form">
-            <button className='px-10 py-3 bg-blue-400 border-2 border-b-[6px] border-solid border-black rounded-lg mt-10 active:border-b-[2px] active:mt-[44px]'
+            <button className='letsgo px-10 py-3 bg-blue-400 border-2 border-b-[6px] border-solid border-black rounded-lg mt-10 active:border-b-[2px] active:mt-[44px]'
             >
               Let&#39;s Go
+            </button>
+          </Link>
+          <Link href="/form">
+            <button className='letsgo2 px-10 py-3 bg-blue-400 border-2 border-b-[6px] border-solid border-black rounded-lg mt-10 active:border-b-[2px] active:mt-[44px]'
+            >
+              Let&#39;s Go Kedua
             </button>
           </Link>
         </div>
